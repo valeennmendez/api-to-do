@@ -18,7 +18,7 @@ func main() {
 	r := gin.Default()
 
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"https://to-do-app-vm.netlify.app"},
+		AllowOrigins:     []string{"https://to-do-app-vm.netlify.app","https://to-do-w-database.vercel.app"},
 		AllowMethods:     []string{"GET", "POST", "DELETE"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authoritazion"},
 		AllowCredentials: true,
